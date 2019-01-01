@@ -79,16 +79,16 @@
 
 
 
-<meta name="description" content="做一个快乐勤快的Coder ;)">
+<meta name="description" content="做一个勤奋快乐的Coder ;)">
 <meta property="og:type" content="website">
 <meta property="og:title" content="StrayDragon的小窝">
 <meta property="og:url" content="https://straydragon.github.io/archives/index.html">
 <meta property="og:site_name" content="StrayDragon的小窝">
-<meta property="og:description" content="做一个快乐勤快的Coder ;)">
+<meta property="og:description" content="做一个勤奋快乐的Coder ;)">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="StrayDragon的小窝">
-<meta name="twitter:description" content="做一个快乐勤快的Coder ;)">
+<meta name="twitter:description" content="做一个勤奋快乐的Coder ;)">
 
 
 
@@ -98,7 +98,7 @@
     root: '/',
     scheme: 'Pisces',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -189,6 +189,26 @@
         </li>
       
         
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
@@ -254,16 +274,16 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2019/01/01/hello-world/" itemprop="url">
+            <a class="post-title-link" href="/2019/01/01/Flutter学习记录/" itemprop="url">
               
-                <span itemprop="name">Hello World</span>
+                <span itemprop="name">Flutter学习记录</span>
               
             </a>
         
       </h2>
 
       <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-01-01T10:48:20+08:00" content="2019-01-01">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-01-01T16:14:19+08:00" content="2019-01-01">
           01-01
         </time>
       </div>
@@ -316,7 +336,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">StrayDragon</p>
-              <p class="site-description motion-element" itemprop="description">做一个快乐勤快的Coder ;)</p>
+              <p class="site-description motion-element" itemprop="description">做一个勤奋快乐的Coder ;)</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -333,13 +353,47 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
             
 
           </nav>
 
           
 
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/StrayDragon" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.zhihu.com/people/straydragon" target="_blank" title="知乎">
+                      
+                        <i class="fa fa-fw fa-globe"></i>知乎</a>
+                  </span>
+                
+            </div>
           
 
           
@@ -405,6 +459,8 @@
     
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
         
       </div>
     
