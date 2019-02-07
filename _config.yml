@@ -81,3 +81,9 @@ deploy:
   type: git
   repository: https://github.com/StrayDragon/StrayDragon.github.io.git
   branch: master
+
+# 修复插入原生html表格导致一堆回车标签问题
+## https://github.com/hexojs/hexo/issues/1388
+marked:
+  gfm: true
+  breaks: false
