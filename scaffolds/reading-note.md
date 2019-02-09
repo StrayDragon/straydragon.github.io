@@ -5,6 +5,7 @@ tags:
 - 'TODO:tag1'
 - 'TODO:...'
 categories: 读书笔记
+comments: true
 ---
 
 <!-- TODO:模板 -->

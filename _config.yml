@@ -87,3 +87,10 @@ deploy:
 marked:
   gfm: true
   breaks: false
+
+# 加入图片懒加载
+## http://www.zhaojun.im/hexo-lazyload/
+lazyload:
+  enable: true
+  # className: #可选 e.g. .J-lazyload-img
+  # loadingImg: #可选 eg. ./images/loading.png
