@@ -41,6 +41,6 @@ date: 2019-02-07 22:55:31
 
 # 书籍信息
 
-> 信息来源: https://book.douban.com/subject/26927749/
+> 书籍信息来源: https://book.douban.com/subject/26927749/
 
 
