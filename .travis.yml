@@ -1,9 +1,13 @@
 language: node_js
 node_js: --lts
 before_script:
-  - git config user.name "straydragon_BlogRobot"
+  - git config user.name "straydragon"
   - git config user.email "straydragonv@gmail.com"
   - sed -i'' "s~https://github.com/StrayDragon/straydragon.github.io.git~https://${ACCESS_TOKEN}@github.com/StrayDragon/straydragon.github.io.git~" _config.yml
+install:
+- npm install
 script:
-  - hexo g
-  - hexo d
+- hexo clean
+- hexo generate
+after_success:
+- hexo deploy
