@@ -79,7 +79,7 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: https://github.com/StrayDragon/StrayDragon.github.io.git
+  repository: https://github.com/StrayDragon/straydragon.github.io.git
   branch: master
 
 # 修复插入原生html表格导致一堆回车标签问题
