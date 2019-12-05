@@ -94,3 +94,6 @@ lazyload:
   enable: true
   # className: #可选 e.g. .J-lazyload-img
   # loadingImg: #可选 eg. ./images/loading.png
+auto_excerpt:
+  enable: true
+  length: 150
