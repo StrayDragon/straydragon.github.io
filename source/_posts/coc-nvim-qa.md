@@ -1,5 +1,5 @@
 ---
-title: coc-nvim-qa
+title: "Q&A: coc.nvim"
 date: 2019-12-05 14:40:44
 tags: 
   - "Vim"
