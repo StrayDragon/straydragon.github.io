@@ -1,5 +1,12 @@
+# My Blog
+[![Build Status](https://travis-ci.org/StrayDragon/straydragon.github.io.svg?branch=hexo)](https://travis-ci.org/StrayDragon/straydragon.github.io)
+
+--- 
+Record my coding experience and life... QAQ
+
 # Automation Tool Support
 - Use the [dragon-cli](https://github.com/StrayDragon/dragon-cli) to manage this repo.
+
 ```bash
 # need to run:
 # 'hexo clean'
