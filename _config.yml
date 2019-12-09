@@ -96,4 +96,4 @@ lazyload:
   # loadingImg: #可选 eg. ./images/loading.png
 auto_excerpt:
   enable: true
-  length: 150
+  length: 80
