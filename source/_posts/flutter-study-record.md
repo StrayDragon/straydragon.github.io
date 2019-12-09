@@ -12,6 +12,8 @@ categories: 移动端开发
 |汇总|Dart’s Flutter Framework Study|学习资料大集合,并介绍了如何在不同的页面上保持状态(BottomNavigationBar)  |[地址](https://steemit.com/utopian-io/@tensor/persisting-user-interface-state-and-building-bottom-navigation-bars-in-dart-s-flutter-framework)|
 
 
+<!-- more -->
+
 
 ## 基本功 Dart
 - [Sample Code | Dart](https://www.dartlang.org/samples)

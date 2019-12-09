@@ -88,12 +88,13 @@ marked:
   gfm: true
   breaks: false
 
-# 加入图片懒加载
-## http://www.zhaojun.im/hexo-lazyload/
 lazyload:
-  enable: true
-  # className: #可选 e.g. .J-lazyload-img
-  # loadingImg: #可选 eg. ./images/loading.png
-auto_excerpt:
-  enable: true
-  length: 80
+  enable: true 
+  onlypost: false
+  loadingImg: # eg. ./images/loading.png 
+
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 8000

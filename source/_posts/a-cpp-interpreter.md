@@ -9,6 +9,9 @@ date: 2019-07-28 22:22:32
 ---
 
 > [Cling](https://github.com/root-project/cling.git) : C++ REPL
+
+<!-- more -->
+
 # 安装
 ## 直接运行
 - 下载最新包解压对应版本直接运行即可 [下载地址](https://root.cern.ch/download/cling/)

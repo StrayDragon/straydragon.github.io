@@ -5,6 +5,9 @@ tags: "Awesome"
 categories: 个人积累
 ---
 > 收集与记录自己学习的资料,电子书等等 (~~持续更新~~ 想到了就更新\=￣ω￣\=)
+
+<!-- more -->
+
 # 超级合集 Super Jar
 - [(justjavac)免费的计算机编程类中文书籍](https://github.com/justjavac/free-programming-books-zh_CN#android)
 

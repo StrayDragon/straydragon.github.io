@@ -15,6 +15,8 @@ date: 2019-02-08 11:55:59
 # 写在前面
 - 最近,正在构思自己的命令行脚手架工具 **`dragon-cli`** 时遇到了这个问题,在学习使用 [click](https://click.palletsprojects.com/en/7.x/) 模块(一个好用方便的建立命令行工具的框架) 的[教程](https://www.youtube.com/watch?v=kNke39OZ2k0)中有一个配置**setup.py**的过程,我才发现一直对这个玩意熟视无睹,并且不明所以,在探索使用的过程,总结此文,方便以后查阅 O(∩_∩)O~
 
+<!-- more -->
+
 # 初步了解
 - 简单来说,这个 **setup.py** 是用来帮助使用者安装 模块(Module)/包(Package) 的构建脚本.就像`pip`, `easy_install`, ... 做的那样 (!它们也是遵循着目标库中的 **setup.py** 而完成的安装).
 

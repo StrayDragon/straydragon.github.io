@@ -1,1 +1,52 @@
 // Custom styles.
+//背景
+@media screen and (min-width:1000px) {
+
+	body {
+		background-image: url(/images/bkg2.jpg);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		//background-position: 50% 50%;
+    background-size: 100%
+	}
+
+	#footer a {
+		color: #eee;
+	}
+}
+
+
+	//改变背景色和透明度
+.main-inner {
+	background: #fff;
+	opacity: 0.95;
+}
+
+	//改变菜单栏透明度
+.header-inner {
+	background: #ffffffe8;
+	opacity: 1;
+}
+	//底部博客信息颜色
+.footer {
+	font-size: 14px;
+	color: #000;
+}
+	//当鼠标移动到选项时的优化
+.menu .menu-item a:hover, .menu-item-active a {
+	background: #ffffff85;
+	border-bottom-color: #dcd1d196;
+}
+
+    //菜单右部的点
+.menu-item-active a:after {
+	content: " ";
+	position: absolute;
+	top: 50%;
+	margin-top: -3px;
+	right: 15px;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: #484848;
+}
