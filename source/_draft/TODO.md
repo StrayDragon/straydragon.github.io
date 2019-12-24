@@ -1,0 +1,15 @@
+- [x] 整理这个软件下的文档
+- [x] 提交iVim版本Bug
+- [ ] 准备个人开源项目贡献
+    - For `iVim`
+        - [ ] 提供一个纯Python实现的伪GitCLI工具用于获取插件
+            - [x] clone
+            - [ ] add
+            - [ ] commit
+            - [ ] log
+            - [x] push
+    - For `vim-parde`
+        - [ ] 学习 Rust 基础
+        - [ ] 学习 VimScript 基础 ， 从知乎一篇文章中总结路线
+        - [ ] 阅读插件逻辑， 尝试兼容NeoVIm
+        - [ ] 阅读项目结构， 总结/询问接口规则
