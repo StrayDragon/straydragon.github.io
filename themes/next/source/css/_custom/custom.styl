@@ -10,9 +10,29 @@
  // background-size: cover
 	//}
 
-	#footer a {
-		color: #eee;
-	}
+	//#footer a {
+	//	color: #eee;
+	//}
+}
+
+.post-toc ol a {
+  &:hover{
+    color:#2397fc;
+    border-bottom-color: #2397fc;
+  }
+}
+
+.sidebar-nav li:hover {
+    color: #0477ab;
+}
+
+.post-body p a {
+  color: #0593d3;
+  border-bottom: none;
+  &:hover {
+    color: #0477ab;
+    text-decoration: underline;
+  }
 }
 
 //侧边栏设置
@@ -32,6 +52,9 @@
 
 .post-toc .nav .active-current > a{
   color: #2397fc;
+  &:hover{
+    color: #2397fc;
+  }
 }
 
 	//改变背景色和透明度
@@ -46,10 +69,10 @@
 	opacity: 1;
 }
 	//底部博客信息颜色
-.footer {
-	font-size: 14px;
-	color: #000;
-}
+//.footer {
+//	font-size: 14px;
+//	color: #000;
+//}
 	//当鼠标移动到选项时的优化
 .menu .menu-item a:hover, .menu-item-active a {
 	background: #ffffff85;

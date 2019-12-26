@@ -1,11 +1,13 @@
 ---
-title: my-effective-python
+title: 'My Effective Python'
 date: 2019-12-23 20:42:30
 tags:
   - python2
   - python3
 categories:
-  - "技术积累"
+  - '技术积累'
+  - '阅读笔记'
+comments: true
 ---
 
 
