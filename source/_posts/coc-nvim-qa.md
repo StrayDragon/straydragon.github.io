@@ -1,4 +1,5 @@
 ---
+
 title: "Q&A: coc.nvim"
 date: 2019-12-05 14:40:44
 tags: 
@@ -6,6 +7,7 @@ tags:
   - "NeoVim"
 categories: 配置文件
 comments: true
+
 ---
 
 - 记录使用 `coc.nvim` 的过程中发现的问题与解决办法, 将在之后整理成为入门教程(==待定==)

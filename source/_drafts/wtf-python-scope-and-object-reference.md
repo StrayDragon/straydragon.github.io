@@ -1,4 +1,5 @@
 ---
+
 title: '哇塞Python: 作用域与对象引用'
 date: 2019-12-25 22:49:27
 tags:
@@ -7,6 +8,7 @@ tags:
 categories:
   - '阅读笔记'
 comments: true
+
 ---
 
 > python-wtf-scope-and-object-reference

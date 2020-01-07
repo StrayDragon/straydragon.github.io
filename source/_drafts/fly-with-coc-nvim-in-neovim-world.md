@@ -1,4 +1,5 @@
 ---
+
 title: '少年, 带上coc.nvim, 在 (Neo)Vim 的世界中尽情翱翔吧!'
 date: 2019-12-25 22:07:44
 tags: 
@@ -7,6 +8,7 @@ tags:
 categories:
 	- '插件与扩展'
 comments: true
+
 ---
 
 

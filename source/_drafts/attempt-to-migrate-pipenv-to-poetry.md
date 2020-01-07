@@ -1,4 +1,5 @@
 ---
+
 title: '一次迁移Pipenv到Poetry的经历与踩坑总结'
 comments: true
 date: 2019-12-26 18:55:43
@@ -8,6 +9,7 @@ tags:
   - 'Pipenv'
 categories:
   - '未归类'
+
 ---
 
 其实从Poetry本身的配置上看, 有两种作用域: 一个是全局配置(config), 一个是本地配置(config ... --local)

@@ -1,4 +1,5 @@
 ---
+
 title: 'My Effective Python'
 date: 2019-12-23 20:42:30
 tags:
@@ -8,6 +9,7 @@ categories:
   - '技术积累'
   - '阅读笔记'
 comments: true
+
 ---
 
 

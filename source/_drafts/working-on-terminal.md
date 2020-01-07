@@ -1,4 +1,5 @@
 ---
+
 title: '终端工作的高效方式' 
 date: 2019-12-22 19:10:48
 tags:
@@ -6,6 +7,7 @@ tags:
   - 'TUI'
 categories: '未归档'
 comments: true
+
 ---
 
 # Vim基本操作
