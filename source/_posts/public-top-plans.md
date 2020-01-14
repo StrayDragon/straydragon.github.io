@@ -15,6 +15,13 @@ top: 10
 
 <!--more-->
 
+# Bug?
+- [ ] 标签/分类页面, 数字表示的含义与直观感受不一致 
+  - 详细描述: 不清楚 "目前共计 xx 个标签/分类 " 中 a 的数字是否把草稿中也统计进去了? 还是重复的标签/分类计数也算进去了?
+  - 问题页面: 
+    - https://straydragon.github.io/categories/  
+    - https://straydragon.github.io/tags/ 
+
 # TODO
 优先级由高到低:
 - \[长期\] 博客文章润色优化
