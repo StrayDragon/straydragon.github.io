@@ -105,15 +105,57 @@ comments: true
 
 ## 参考资料 [待补充]
 
+#### 通用工具
+
 #### 前端
 
+##### PC & Mobile
 - [Flutter 官方文档](https://flutter.dev/docs)
 - 《Flutter技术入门与实战》
 
-#### 后端
+###### 数据持久
+> https://github.com/tekartik/sqflite | tekartik/sqflite: SQLite flutter plugin
+> https://github.com/tekartik | Tekartik
+> https://medium.com/flutter/flutters-ios-application-bundle-6f56d4e88cf8 | Flutter’s iOS Application Bundle - Flutter - Medium
+> https://github.com/Jaguar-dart/jaguar_orm/issues | Issues · Jaguar-dart/jaguar_orm
+> https://juejin.im/post/5c45c72d6fb9a049d81c2b4c | 手把手教你在Flutter项目优雅的使用ORM数据库 - 掘金
 
-- [Django 官方文档](https://docs.djangoproject.com/en/3.0/intro/tutorial01/)
-- [Flask 官方文档](https://flask.palletsprojects.com/)
+##### Web
+> [vuetifyjs/vuetify: 🐉 Material Component Framework for Vue](https://github.com/vuetifyjs/vuetify)
+> [ElemeFE/element: A Vue.js 2.0 UI Toolkit for Web](https://github.com/ElemeFE/element)
+> [vuematerial/vue-material: Material design for Vue.js](https://github.com/vuematerial/vue-material)
+> [airyland/vux: Mobile UI Components based on Vue & WeUI](https://github.com/airyland/vux)
+> [Semantic-UI-Vue/Semantic-UI-Vue: Semantic UI integration for Vue](https://github.com/Semantic-UI-Vue/Semantic-UI-Vue)
+
+
+
+#### 后端
+> [tiangolo/fastapi: FastAPI framework, high performance, easy to learn, fast to code, ready for production](https://github.com/tiangolo/fastapi)
+> [Django 官方文档](https://docs.djangoproject.com/en/3.0/intro/tutorial01/)
+> [Flask 官方文档](https://flask.palletsprojects.com/)
+
+##### 数据持久
+
+> [dahlia/awesome-sqlalchemy: A curated list of awesome tools for SQLAlchemy](https://github.com/dahlia/awesome-sqlalchemy)
+> [ponyorm/pony: Pony Object Relational Mapper](https://github.com/ponyorm/pony/)
+
+
+##### 依赖管理
+
+##### 维护工具
+
+###### 部署
+> [ansible/ansible: Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy. ](https://github.com/ansible/ansible?hmsr=pycourses.com&utm_source=pycourses.com&utm_medium=pycourses.com)
+>  - Avoid writing scripts or custom code to deploy and update your applications — automate in a language that approaches plain English, using SSH, with no agents to install on remote systems. https://docs.ansible.com/ansible/
+
+
+##### 面向服务体系架构与微服务
+> https://www.redhat.com/zh/topics/microservices/what-are-microservices | 什么是微服务？
+> https://en.wikipedia.org/wiki/Microservices | Microservices - Wikipedia
+> https://zh.wikipedia.org/zh-cn/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84 | 面向服务的体系结构 - 维基百科，自由的百科全书
+> https://www.zhihu.com/question/65502802 | 什么是微服务架构？ - 知乎
+
+###### 
 
 #### 工具链相关
 
@@ -124,3 +166,57 @@ comments: true
 - 《Google软件测试之道》
 - 《C++ 程序设计实践与技巧 测试驱动开发》
 
+
+# 0x01 目标,需求分析与应用技术生态调研
+ 
+## 目标
+> 从不同的视角思考, 经常会获得更多的收获. 我将目前的所有认知与思考总结分类于此
+
+### 产品目标
+
+### 技术目标
+> 这个章节将表达我期望使用的应用技术, 熟练程度.
+
+- RESTful API, GraphQL
+- 权限验证: JWT, Auth2
+- 应用 `docker` 及相关生态
+
+## 需求分析
+
+## 应用技术生态调研
+
+### 后端部分
+
+#### API Server: 对外提供接口服务
+
+##### FastAPI (Python)
+
+### 前端部分
+
+#### Web
+
+#### FLutter
+
+
+# 总体参考[论文引用]
+
+[时间管理 方法 - Sci-Hub文献检索](https://s2.sci-hub.org.cn/scholar?start=20&q=%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86+%E6%96%B9%E6%B3%95&hl=zh-TW&as_sdt=0,5)
+[PsycNET](https://psycnet.apa.org/fulltext/1994-39368-001.html)
+[Time management - Wikipedia](https://en.wikipedia.org/wiki/Time_management)
+[To-Do Lists Can Take More Time Than Doing, But That Isn't the Point - WSJ](https://www.wsj.com/articles/SB109460145618411891)
+[时间管理 - 维基百科，自由的百科全书](https://zh.wikipedia.org/wiki/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86)
+[论文参考文献中J、M等是什么意思_百度知道](https://zhidao.baidu.com/question/177928243)
+[Untitled](https://www.iutconference.com/wp-content/uploads/2014/03/Kwan_Paper_IUT2010.pdf)
+[Time Management | Penn State Learning](https://pennstatelearning.psu.edu/time-management)
+[微服务 论文 - 搜索结果 - 知乎](https://www.zhihu.com/search?type=content&q=%E5%BE%AE%E6%9C%8D%E5%8A%A1%20%E8%AE%BA%E6%96%87)
+[读思码--ShowDoc](https://www.showdoc.cc/note?page_id=1390467302230065)
+[基于微服务架构的系统设计与开发--《南京邮电大学》2017年硕士论文](http://cdmd.cnki.com.cn/Article/CDMD-10293-1017859549.htm)
+[综合搜索_远见搜索](http://yuanjian.cnki.com.cn/Search/Result?content=%u65F6%u95F4%u7BA1%u7406)
+[大学生学习计划管理系统的开发研究--《第二军医大学》2012年硕士论文](http://cdmd.cnki.com.cn/Article/CDMD-90024-1012404732.htm)
+[综合搜索_远见搜索](http://yuanjian.cnki.com.cn/Search/Result)
+[基于REST架构的web服务技术研究--《武汉理工大学》2013年硕士论文](http://cdmd.cnki.com.cn/Article/CDMD-10497-1013296405.htm)
+[学位论文搜索结果_远见搜索](http://yuanjian.cnki.com.cn/cdmd/Search/index)
+[研究生课余时间管理研究--《湖南大学》2013年硕士论文](http://cdmd.cnki.com.cn/Article/CDMD-10532-1014233258.htm)
+[综合搜索_远见搜索](http://yuanjian.cnki.com.cn/Search/Result)
+[基于跨平台的移动应用开发框架研究--《北京交通大学》2014年硕士论文](http://cdmd.cnki.com.cn/Article/CDMD-10004-1014178267.htm)
+[面向服务的业务流程建模与验证研究--《西安电子科技大学》2012年博士论文](http://cdmd.cnki.com.cn/Article/CDMD-10701-1013114286.htm)

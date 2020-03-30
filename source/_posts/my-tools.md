@@ -43,19 +43,15 @@ date: 2020-01-14 18:59:56
 # `tmux`
 - 单终端复用 
 ## 参考
-- [一文助你打通 tmux](https://zhuanlan.zhihu.com/p/102546608)
+> [一文助你打通 tmux](https://zhuanlan.zhihu.com/p/102546608)
+> [Search · tmux config](https://github.com/search?q=tmux+config&ref=opensearch)
+> [tmux-config/.tmux.conf at master · tony/tmux-config](https://github.com/tony/tmux-config/blob/master/.tmux.conf)
 
 # `i3-wm`
 - 窗口管理器
 
 # `NeoVim / Vim`
 - 编辑器+一堆插件
-
-# `Termux` (\**nix shell)
-- Android Phone 
-
-# `TermuxArch`
--  模拟ArchLinux环境，使用pacman (需要安装TermuxApp)
 
 # `Shelly` (SSH Client App)
 - iOS/iPadOS
@@ -105,3 +101,9 @@ date: 2020-01-14 18:59:56
 
 # `gdbgui`
 -  Web版GDB调试工具
+
+# `Termux` (\**nix shell)
+- Android Phone 
+
+# `TermuxArch`
+-  模拟ArchLinux环境，使用pacman (需要安装TermuxApp)

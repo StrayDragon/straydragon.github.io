@@ -24,7 +24,7 @@ comments: true
 > - https://mirrors.tuna.tsinghua.edu.cn/help/docker-ce/
 
 # 2. 配置
-需要`sudo systemctl start docker`,启动docker.server不过这样并不会使得docker服务每次开机都自动打开, 因为我只是希望做一些练习, 用时启动对于我来说是不错的,不用的时候不用有开销(大概),如果你希望它默认启动,请启用并建立链接
+需要`sudo systemctl start docker`来启动docker.server,不过这样并不会使得docker服务每次开机都自动打开, 因为我只是希望做一些练习, 用时启动对于我来说是不错的,不用的时候不用有开销(大概),如果你希望它默认启动,请启用并建立链接
 ```bash
 sudo systemctl enable docker
 sudo systemctl start docker
