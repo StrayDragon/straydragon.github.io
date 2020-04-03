@@ -2,19 +2,19 @@
 
 title: "开发日记: 时间管理应用"
 date: 2020-01-02 08:12:32
-tags: 
+tags:
   - "Flutter"
-categories: 
+categories:
   - "开发日记"
 comments: true
 
 ---
 
 > 开新坑咯...
-> 
+>
 > 我想通过开发日记的形式记录过程中的想(wa)法(keng)与吐(bei)槽(nüè), 由以往的经验来看,要想快速理解一个项目, 除了开发者关心的版本控制记录之外(如:commit logs / issues 等), 及时的文档与从零开始的介绍也是非常重要的,故诞生此文,希望我能坚持下去~
 >
-> **PS:** 
+> **PS:**
 > - 我不太喜欢把系列文章分成那么多篇,所以暂时都写在这, 以`0x`序号为主顺序.
 > - 笔者初次写作, 若有任何不通或小错误, 任何建议与批评都是欢迎的, 祝你阅读愉快~
 
@@ -61,7 +61,7 @@ comments: true
   - [扩展] 数据分析模块(如习惯分析...)
   - [扩展] 搜素模块
   - [扩展] 信息持久化模块(如云备份...)
-  
+
 - 至少 Linux/Web 与 Android 的UI布局需要有所更改
 
 ## 后端
@@ -96,7 +96,7 @@ comments: true
 - Git与Github:
   - 更规范的Git commit messages / log / tag 管理
   - 更熟练地使用Git常用命令
-  - 学会掌握Github Flow 的开发流程. 
+  - 学会掌握Github Flow 的开发流程.
   - 严格的Review与PR模拟
 
 - 测试与持续集成
@@ -155,7 +155,7 @@ comments: true
 > https://zh.wikipedia.org/zh-cn/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84 | 面向服务的体系结构 - 维基百科，自由的百科全书
 > https://www.zhihu.com/question/65502802 | 什么是微服务架构？ - 知乎
 
-###### 
+######
 
 #### 工具链相关
 
@@ -168,7 +168,7 @@ comments: true
 
 
 # 0x01 目标,需求分析与应用技术生态调研
- 
+
 ## 目标
 > 从不同的视角思考, 经常会获得更多的收获. 我将目前的所有认知与思考总结分类于此
 
@@ -181,42 +181,142 @@ comments: true
 - 权限验证: JWT, Auth2
 - 应用 `docker` 及相关生态
 
-## 需求分析
+# 版本目标与需求和功能分析
 
-## 应用技术生态调研
+鉴于需求往往会改变, 而落实完成功能往往会体现在大大小小的版本号上, 所以我将会及时更新目标,功能与需求说明, 最终体现在语义化版本号内容更新中
 
-### 后端部分
+(注意: 这里确定的版本号与说明文只是文档版本(如 `v0.0.0-Luna`), 请以各个项目中实际版本的变动信息查询)
 
-#### API Server: 对外提供接口服务
+## 整体定位
 
-##### FastAPI (Python)
+包含待办事项, 番茄法计时, 象限分类, 优先级, 计划推荐(关键路径等算法), 自动化, 优势分析 等功能的时间管理应用
 
-### 前端部分
+## v0.0.0-Luna
+
+基于市面常见`TODO`应用, 完成待办事项基本功能, 实现基本应用框架, 并尝试完成各个平台部署.
+
+**注意**: 此版本需要细心设计, 为未来功能开发作出合适的扩展设计
+
+### 前端
+
+整体描述:
+
+- 减少或弃用 Dart(Flutter) 投入, 转而使用 JS/TS, HTML, Stylus 等大前端相关技术栈
+  - 虽然使用 Flutter 开发过两三个 App(两个课设,一个实验项目), 但还是不太喜欢 Dart 在 Flutter 上的表现, 由于被禁了反射, 太多事情需要做的非常繁琐了, 比如它的 JSON 序列化, ORM 等, 虽然有 `codegen` 这个大杀器, 但有时候代码膨胀的厉害, 十分难受, 写起来总感觉有坏味道; 嵌套的多个部件拆分, 多种状态管理还是有点繁琐,当然也有更好的`inspector`工具了, 总而言之就是我太菜, 且不是很喜欢 Dart 提供的语法罢了(当然这不是主要原因)...
+  - 反过来看回所谓大前端圈(主要是 TS 或 ES6 以后的 JS)的生态和方案, 学习成本降低了不少, 主要是我的需求可能不是最性能敏感的, 使用前端技术栈足以应对了. (另外确实想学习一下 TS 了 23333, 毕竟受到 `coc.nvim` 这个极其优秀的插件受到了极大的鼓舞, 也想写一些插件玩玩了, p.s.好像不是一个领域的东西 233333)
+- 深入学习并应用跨端生成对应代码的技术, 争取最小化代价获得更多的代码复用
+
+#### PC(Linux)
+
+> **变更(主框架)**
+>
+> **弃用**: `Flutter Desktop` , 原因:
+>
+> - 不太稳定, 未进入主线支持;
+> - 需重度使用的插件不支持(如 [sqflite](https://pub.flutter-io.cn/packages/sqflite) )
+>
+> **选用**: `Electron`, 原因:
+>
+> - 生态繁荣, 相关插件支持良好
+> - 性能够用
+> - 配合已有技术栈方便
+
+由[技术调研](TODO)中得出的表现, 与实际需求对比, 最终还是还是放弃了 `FlutterDesktop`, 代价可能是丢掉了原生级别的高性能的用户体验, 但带来不小的开发效率的提升
+
+##### Databases
+
+如果需要缓存一些数据的话, 关系型貌似长久持久化支持完善的只有 `SQLite`, 短期可以存一存文档数据库, 不过需要进一步调研 ...
 
 #### Web
 
-#### FLutter
+> **变更简要(主框架):**
+>
+> **弃用**: `Flutter Web` , 原因:
+>
+> - 需重度使用的插件不支持, 如 [sqflite](https://pub.flutter-io.cn/packages/sqflite)
+> - 包体积太大, 且有性能有点问题, 见 [如何评价 Flutter for Web？ - 闲鱼技术的回答 - 知乎](https://www.zhihu.com/question/323439136/answer/850516697);
+> - 一些部件(Widget)有渲染问题
+>
+> **选用**: `Vuetify`, 原因:
+>
+> - 生态繁荣, 相关插件支持良好
+> - 性能够用
+> - `Material Design` 支持完善
+
+#### CLI(\*nix)
+
+> **等待调研**
+
+方便更喜欢**Keyboard Only**的选手使用, 比如俺 QAQ
+
+#### Mobile(Android)
+
+> **暂时停止开发**
+
+不过, 目前仍未找到合适的替代, `Flutter`仍是我看得到的所有技术中除原生外最好的选择(视时间待定)
+
+### 后端
+
+终于选中了合适的框架(`FastAPI`), 看上去非常好, 读了两天文档的直接感受就是作者很贴心和照顾新人, 社区活跃, 底层还算结实. 有完整的鉴权集成(OAuth2/1 with JWT, Basic HTTP Auth...), OpenAPI Schema 与 Swagger 文档生成, 真的吹爆(虽然可能 Swagger 早就出现过了, 可我第一次听说哈哈, 想想实习时和后端扯 API 规范扯来扯去, 当时咋就没遇到这个呢, 有了它就可以, 别 BB,文档 Sever 一直开着, 要啥返回啥自己看, 降低了沟通损耗, 真是赛高~), 与 ASGI 的结合和兼容同步写法的代码, GraphQL 等等一些我还没怎么接触过的东西, 项目驱动学习的感觉不错.
+
+#### API Server
+
+> 变更(主框架)
+>
+> 弃用: `Flask RESTFul API Server` 相关生态, 原因:
+>
+> - [基于 Flask 的 Web API 开发指南 - PyCon China 2019 上海 李辉](https://www.bilibili.com/video/av77591259?p=2) 分享的后半部分对相关 RESTFul API 的框架描述, 或见我的[技术调研](TODO)
+>
+> 选用: `FastAPI`, 原因:
+>
+> - 开发效率提升(积极的 Type Hint 完美智能补全与自动校验, 提供灵活的方式来依赖注入)
+> - 文档写的太好了 QAQ, 太适合学习了
+> - ASGI 看上去挺赞, 并且兼容传统写法
+> - 内部使用库 `starlette` 组织开发了 `Django RESTFul Framework`, 质量值得信赖
+>
+> 备用: `Django RESTFul Framework`
+>
+> - 仍未实际使用过, 暂时搁置
+
+##### 该版本待实现事项：
+
+- [ ] 用户鉴权:
+  - [ ] 注册
+  - [ ] 登录
+
+#### Databases
+
+暂时没选好, 其实目前也太不需要想, 暂时使用 `SQLite` 开发就好
 
 
 # 总体参考[论文引用]
 
 [时间管理 方法 - Sci-Hub文献检索](https://s2.sci-hub.org.cn/scholar?start=20&q=%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86+%E6%96%B9%E6%B3%95&hl=zh-TW&as_sdt=0,5)
+
 [PsycNET](https://psycnet.apa.org/fulltext/1994-39368-001.html)
+
 [Time management - Wikipedia](https://en.wikipedia.org/wiki/Time_management)
+
 [To-Do Lists Can Take More Time Than Doing, But That Isn't the Point - WSJ](https://www.wsj.com/articles/SB109460145618411891)
+
 [时间管理 - 维基百科，自由的百科全书](https://zh.wikipedia.org/wiki/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86)
-[论文参考文献中J、M等是什么意思_百度知道](https://zhidao.baidu.com/question/177928243)
-[Untitled](https://www.iutconference.com/wp-content/uploads/2014/03/Kwan_Paper_IUT2010.pdf)
+
 [Time Management | Penn State Learning](https://pennstatelearning.psu.edu/time-management)
+
 [微服务 论文 - 搜索结果 - 知乎](https://www.zhihu.com/search?type=content&q=%E5%BE%AE%E6%9C%8D%E5%8A%A1%20%E8%AE%BA%E6%96%87)
+
 [读思码--ShowDoc](https://www.showdoc.cc/note?page_id=1390467302230065)
+
 [基于微服务架构的系统设计与开发--《南京邮电大学》2017年硕士论文](http://cdmd.cnki.com.cn/Article/CDMD-10293-1017859549.htm)
-[综合搜索_远见搜索](http://yuanjian.cnki.com.cn/Search/Result?content=%u65F6%u95F4%u7BA1%u7406)
+
 [大学生学习计划管理系统的开发研究--《第二军医大学》2012年硕士论文](http://cdmd.cnki.com.cn/Article/CDMD-90024-1012404732.htm)
-[综合搜索_远见搜索](http://yuanjian.cnki.com.cn/Search/Result)
+
 [基于REST架构的web服务技术研究--《武汉理工大学》2013年硕士论文](http://cdmd.cnki.com.cn/Article/CDMD-10497-1013296405.htm)
+
 [学位论文搜索结果_远见搜索](http://yuanjian.cnki.com.cn/cdmd/Search/index)
+
 [研究生课余时间管理研究--《湖南大学》2013年硕士论文](http://cdmd.cnki.com.cn/Article/CDMD-10532-1014233258.htm)
-[综合搜索_远见搜索](http://yuanjian.cnki.com.cn/Search/Result)
+
 [基于跨平台的移动应用开发框架研究--《北京交通大学》2014年硕士论文](http://cdmd.cnki.com.cn/Article/CDMD-10004-1014178267.htm)
+
 [面向服务的业务流程建模与验证研究--《西安电子科技大学》2012年博士论文](http://cdmd.cnki.com.cn/Article/CDMD-10701-1013114286.htm)
