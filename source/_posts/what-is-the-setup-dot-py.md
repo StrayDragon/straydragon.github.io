@@ -2,12 +2,12 @@
 
 title: '"这个 setup.py 是什么?"'
 tags:
+  - "Python3"
+  - "Python3::pip"
+  - "Python3::PyPI"
 
-- "Python3"
-- "Python3::pip"
-- "Python3::PyPI"
-  categories: "配置文件"
-  date: 2019-02-08 11:55:59
+categories: "配置文件"
+date: 2019-02-08 11:55:59
 
 ---
 
