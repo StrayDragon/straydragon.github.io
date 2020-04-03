@@ -10,12 +10,38 @@ categories:
 comments: true
 
 ---
+Python一直以来都因看上去简单易用, 而受到不少人的青睐, 然鹅, 架不住一些历史和设计的原因 存在不少令人抓狂的规则, 让人摸不到头脑.
+![wtf](./wtf_title.png)
 
-> python-wtf-scope-and-object-reference
 
-# TODO:
-- [ ] 可不可以使用Jupyter Notebook/Lab 作为最后的笔记文件
-- [ ] 描述结构体可以使用: [Python代码流程可视化](http://pythontutor.com/visualize.html#mode=edit)
+> 来自: [twitter/laike9m](https://twitter.com/laike9m/status/1236846226462523393?s=19)
+
+今天在瞎写自己的`tweedle`这个CLI工具时, 终于被上图的某个错误理解而导致不断报错, 于是我决定, 重拾基础, 争取通过此文整理好Python中作用域和传递对象引用的相关的坑
+
+<!-- more -->
+
+一般这种时候没有一个非常友好的inspect方法是不行的, 那么我们需要立刻寻找相关命令行工具和模块?
+
+No~No~No~, 就我以前的开发经历来看, 常常会因解决X而递归的解决一系列路上遇到的问题,最后解决了Y...效率实在不太好, 于是掏出神器 [Python Tutor](http://pythontutor.com/) 来基本观察内部结构变化, 之后再上那些屠龙刀(这个作者看上去一点也Hack啊 = =|||), 具体效果如下图所示(可能有网不太好的同学,体验稍差,可以在此Repo https://github.com/pgbovine/OnlinePythonTutor 按README指导自行安装部署本地版本哦):
+
+![example](./python_tutor_example.png)
+
+复制以下代码, 自己感受下吧!
+
+```python
+g = None
+def foo():
+    a = 1
+    b = 2
+    def bar():
+        print(b)
+        print(g)
+        c = 2
+    bar()
+
+foo()
+```
+
 - [ ] 学会组织一篇文章, 让读者阅读起来舒服,流畅
 
 
