@@ -1,10 +1,10 @@
 ---
 
 title: '我的工具链'
-tags: 
+tags:
   - 'Linux Tools'
   - 'CLI/TUI'
-categories: 
+categories:
   - '开发工具'
   - '个人总结'
 comments: true
@@ -41,7 +41,7 @@ date: 2020-01-14 18:59:56
 
 
 # `tmux`
-- 单终端复用 
+- 单终端复用
 ## 参考
 > [一文助你打通 tmux](https://zhuanlan.zhihu.com/p/102546608)
 > [Search · tmux config](https://github.com/search?q=tmux+config&ref=opensearch)
@@ -59,10 +59,10 @@ date: 2020-01-14 18:59:56
 # `ranger`
 -  TUI 文件管理器
 
-# `autojump` 
+# `autojump`
 -  （不推荐 慢）快速跳转
 
-#  `z.lua` 
+#  `z.lua`
 -  快速跳转
 
 # `tldr`
@@ -77,7 +77,7 @@ date: 2020-01-14 18:59:56
 # `screenfetch`
 -  设备信息和logo
 
-# `mosh` 
+# `mosh`
 -  基于UDP的“SSH”替代品
 - 有相关的客户/服务器端，适合较差网络，可断网重连，但是没有明显改善我的iPad与Linux/Android通信的摁键延迟问题
 
@@ -103,7 +103,14 @@ date: 2020-01-14 18:59:56
 -  Web版GDB调试工具
 
 # `Termux` (\**nix shell)
-- Android Phone 
+- Android Phone
 
 # `TermuxArch`
 -  模拟ArchLinux环境，使用pacman (需要安装TermuxApp)
+
+# `djJyYXk=:(base64)` ()
+<!-- 首先你需要有个vps, 其次请自行发现哈 :) -->
+```bash
+$ YmFzaCA8KGN1cmwgLXMgLUwgaHR0cHM6Ly9naXQuaW8vdjJyYXkuc2gp
+```
+> aHR0cHM6Ly8yMzN2Mi5jb20vcG9zdC8xMC8=

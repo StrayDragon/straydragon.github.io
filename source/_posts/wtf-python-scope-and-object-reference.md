@@ -227,3 +227,5 @@ after:	 a:1 id:94304221255424, b:3, id:94304221255488
 > https://stackoverflow.com/questions/8056130/immutable-vs-mutable-types
 >
 > https://www.zhihu.com/search?type=content&q=python%20%E5%AF%B9%E8%B1%A1%E4%BC%A0%E9%80%92
+>
+> https://yuyang0.github.io/articles/defects-of-python.html
