@@ -7,9 +7,6 @@ MAIN_BRANCH_NAME = "main"
 
 def run_command(command):
     """Run a shell command and handle errors."""
-    if input("!!!WARNING!!! this script will remove all git history to reduce git repo size, continue? yes/[no]: ").lower().strip() != 'yes':
-        print(f"Exit")
-        sys.exit(0)
     try:
         subprocess.run(command, check=True)
     except subprocess.CalledProcessError as e:
@@ -38,5 +35,9 @@ def clean_git_repo():
     run_command(["git", "gc", "--prune=now"])
 
 if __name__ == "__main__":
+    if input("!!!WARNING!!! this script will remove all git history to reduce git repo size, continue? yes/[no]: ").lower().strip() != 'yes':
+        print(f"Exit")
+        sys.exit(0)
+
     clean_git_repo()
 
