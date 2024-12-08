@@ -14,11 +14,11 @@ draft: false
 > 如果你曾经浏览过某些 Python 模块的源码,
 > 你会发现一般都会有一个名为**setup.py**的文件,那么这个文件是干啥的呢?
 
+<!--more-->
+
 # 写在前面
 
 - 最近,正在构思自己的命令行脚手架工具 **`dragon-cli`** 时遇到了这个问题,在学习使用 [click](https://click.palletsprojects.com/en/7.x/) 模块(一个好用方便的建立命令行工具的框架) 的[教程](https://www.youtube.com/watch?v=kNke39OZ2k0)中有一个配置**setup.py**的过程,我才发现一直对这个玩意熟视无睹,并且不明所以,在探索使用的过程,总结此文,方便以后查阅 O(∩_∩)O~
-
-<!-- more -->
 
 # 初步了解
 

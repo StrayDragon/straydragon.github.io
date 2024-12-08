@@ -2,7 +2,7 @@
 
 title: '折腾记: 如何在 iPad 上舒服地码代码呢?'
 date: 2019-12-23T17:23:31+08:00
-draft: false
+draft: true
 tags:
 - 'iPad'
 categories:
@@ -12,15 +12,16 @@ comments: true
 
 > 我想有一个可以临时写写简单的代码，最好提供本地编译器，有什么选择吗？
 > 为啥没有一个好用的C编译器呢?
-> VSCode online 没有出现
+> ~~VSCode online 没有出现~~
 > code-server是个不错的替代
-> VScode online 的iPad Safari支持被提上日程，敬请期待
-> 在体验过一系列 App Store 上各种代码编辑器后，
+> ~~VScode online 的iPad Safari支持被提上日程，敬请期待~~
 
+<!--more-->
+
+> 在体验过一系列 App Store 上各种代码编辑器后，
 > 你能找到可以用的工具:
 > - 现有的编译器/解释器: `python2 (2.7)`, `python3 (3.6,3.7)` ,`lua`, `javascript (node.js)`, `c (clang/lli)`,
 > - 扩展的库，框架`react`, `react-native`, `pure python package (use StaSh)`
-
 
 ## 其他辅助应用
 

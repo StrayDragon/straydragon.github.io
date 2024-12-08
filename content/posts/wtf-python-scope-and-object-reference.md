@@ -11,6 +11,7 @@ comments: true
 draft: false
 ---
 Python一直以来都因看上去简单易用, 而受到不少人的青睐, 然鹅, 架不住一些历史和设计的原因 存在不少令人抓狂的规则, 让人摸不到头脑.
+
 <!-- more -->
 
 ![wtf](./wtf_title.png)

@@ -4,9 +4,12 @@ tags:
 - "vim"
 comments: true
 date: 2019-12-09T13:34:37+08:00
-draft: false
+draft: true
 ---
 
+整理并总结 Vim-like 学习资料与技巧...
+
+<!--more-->
 
 # 学习资料
 [VIM: index](http://vimcdoc.sourceforge.net/doc/index.html)

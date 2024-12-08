@@ -7,7 +7,7 @@ tags:
 categories:
 - "开发日记"
 comments: true
-draft: false
+draft: true
 
 ---
 
@@ -19,10 +19,10 @@ draft: false
 > - 我不太喜欢把系列文章分成那么多篇,所以暂时都写在这, 以`0x`序号为主顺序.
 > - 笔者初次写作, 若有任何不通或小错误, 任何建议与批评都是欢迎的, 祝你阅读愉快~
 
+<!-- more -->
 
 # 0x00 开篇准备与碎碎念
 
-<!-- more -->
 
 ## 动机/契机
 由于`Flutter`其非常优秀的原生渲染以及跨平台的能力十分诱人,也充分满足我的平台需求,虽然有不少的坑,也写过一些demo体验过,但还是值得一试的;其次我想构建一个完整的软件, 除了这几个前端还要包含后端的部分的,而[微服务(Microservices)](https://en.wikipedia.org/wiki/Microservices) 一词经常出现在我阅读的技术文章中,因此感到很好奇,在阅读相关解释后发现虽然并不是很适合我准备制作的App的需求(有点太小题大作了,当然,如果可以维护到那个规模,试一试也未尝不可),而其"原型"面向服务架构 ([Service-oriented architecture, SOA](https://en.wikipedia.org/wiki/Service-oriented_architecture)) ,更为适合我想要打造出来的那个系统符合的架构名字,标题也因此而来.
