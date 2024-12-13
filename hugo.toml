@@ -39,6 +39,14 @@ name = "分类"
 url = "/categories/"
 title = ""
 weight = 3
+[[menu.main]]
+identifier = "github-src"
+pre = '<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>'
+post = ""
+name = ""
+url = "https://github.com/StrayDragon/straydragon.github.io"
+title = "源代码"
+weight = 4
 
 # Hugo 解析文档的配置
 [markup]
@@ -89,7 +97,7 @@ fingerprint = ""
 #  日期格式
 dateFormat = "2006-01-02"
 # 网站图片, 用于 Open Graph 和 Twitter Cards
-images = ["/logo.png"]
+images = ["/static/favicon.svg"]
 #  开启 PWA 支持
 enablePWA = false
 # [试验性功能] 缓存markdown中的图片链接到本地，详情请见：https://github.com/HEIGE-PCloud/DoIt/pull/860#issue-1574342372
@@ -114,7 +122,7 @@ gravatarEmail = ""
 # 当添加到 iOS 主屏幕或者 Android 启动器时的标题, 覆盖默认标题
 title = "DoIt"
 # 是否隐藏网站图标资源链接
-noFavicon = true
+noFavicon = false
 # 更现代的 SVG 网站图标, 可替代旧的 .png 和 .ico 文件
 svgFavicon = ""
 # Safari 图标颜色
@@ -161,21 +169,23 @@ cacheRemote = true
 # 图片缩放和优化
 optimise = true
 # 页面头部导航栏配置
+
+# Header config
+# 页面头部导航栏配置
 [params.header]
-#  主题切换模式
 # 主题切换模式 ("switch", "select")
 themeChangeMode = "switch"
-#  页面头部导航栏标题配置
+# 页面头部导航栏标题配置
 [params.header.title]
 # LOGO 的 URL
 logo = ""
 # 标题名称
 name = ""
 # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
-pre = ""
+pre = '<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M575.8 255.5c0 18-15 32.1-32 32.1l-32 0 .7 160.2c0 2.7-.2 5.4-.5 8.1l0 16.2c0 22.1-17.9 40-40 40l-16 0c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1L416 512l-24 0c-22.1 0-40-17.9-40-40l0-24 0-64c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32 14.3-32 32l0 64 0 24c0 22.1-17.9 40-40 40l-24 0-31.9 0c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2l-16 0c-22.1 0-40-17.9-40-40l0-112c0-.9 0-1.9 .1-2.8l0-69.7-32 0c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>'
 # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
 post = ""
-#  是否为标题显示打字机动画
+# 是否为标题显示打字机动画
 typeit = false
 
 # 页面底部信息配置
