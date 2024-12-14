@@ -6,8 +6,6 @@ tags:
 - 'Python'
 categories:
 - '学习笔记'
-series: "WTF!Python系列"
-series_weight: 10
 comments: true
 draft: false
 enableLastMod: true
