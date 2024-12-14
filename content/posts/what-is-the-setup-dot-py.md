@@ -2,13 +2,15 @@
 
 title: '"这个 setup.py 是什么?"'
 tags:
-- "Python3"
-- "Python3::pip"
-- "Python3::PyPI"
+- "python"
 categories:
 - "配置文件"
+- '学习笔记'
 date: 2019-02-08T11:55:59+08:00
 draft: false
+enableLastMod: true
+enableWordCount: true
+enableReadingTime: true
 ---
 
 > 如果你曾经浏览过某些 Python 模块的源码,

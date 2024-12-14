@@ -3,8 +3,12 @@ title: "PVE8折腾记录"
 date: 2023-10-25T20:54:08+08:00
 draft: false
 tags:
-- PVE
-- 折腾
+- "PVE"
+categories:
+- "折腾"
+enableLastMod: true
+enableWordCount: true
+enableReadingTime: true
 ---
 
 记录一下为 5825U 双网口工控机安装并使用PVE(All in Boom)的过程, 分享给需要参考安装和使用的读者!

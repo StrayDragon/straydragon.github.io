@@ -5,11 +5,13 @@ date: 2019-12-25T22:07:44+08:00
 draft: false
 tags:
 - 'Vim'
-- 'NeoVim'
 categories:
 - '插件与扩展'
 comments: true
 draft: false
+enableLastMod: true
+enableWordCount: true
+enableReadingTime: true
 ---
 
 

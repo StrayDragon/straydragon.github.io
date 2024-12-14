@@ -7,6 +7,9 @@ tags:
 categories:
 - "移动端开发"
 draft: true
+enableLastMod: true
+enableWordCount: true
+enableReadingTime: true
 ---
 
 <!--more-->

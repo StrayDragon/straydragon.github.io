@@ -9,6 +9,9 @@ categories:
 comments: true
 date: 2020-02-10T15:32:28+08:00
 draft: false
+enableLastMod: true
+enableWordCount: true
+enableReadingTime: true
 ---
 
 我的读书笔记: 摘自《Linux命令行与Shell脚本编程大全》中那些有意义的技巧和命令...

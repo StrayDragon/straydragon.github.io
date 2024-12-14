@@ -10,7 +10,9 @@ categories:
 comments: true
 date: 2020-01-14T18:59:56+08:00
 draft: true
-
+enableLastMod: true
+enableWordCount: true
+enableReadingTime: true
 ---
 
 用于记录一些十分高效好用的工具以及使用经验,教训与总结

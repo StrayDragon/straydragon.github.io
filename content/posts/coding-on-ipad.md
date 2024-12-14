@@ -6,8 +6,11 @@ draft: true
 tags:
 - 'iPad'
 categories:
-- '未归档'
+- '折腾'
 comments: true
+enableLastMod: true
+enableWordCount: true
+enableReadingTime: true
 ---
 
 > 我想有一个可以临时写写简单的代码，最好提供本地编译器，有什么选择吗？

@@ -4,11 +4,15 @@ title: '哇塞Python: 作用域与对象引用'
 date: 2019-12-25T22:49:27+08:00
 tags:
 - 'Python'
-- 'Python3'
 categories:
-- '阅读笔记'
+- '学习笔记'
+series: "WTF!Python系列"
+series_weight: 10
 comments: true
 draft: false
+enableLastMod: true
+enableWordCount: true
+enableReadingTime: true
 ---
 Python一直以来都因看上去简单易用, 而受到不少人的青睐, 然鹅, 架不住一些历史和设计的原因 存在不少令人抓狂的规则, 让人摸不到头脑.
 

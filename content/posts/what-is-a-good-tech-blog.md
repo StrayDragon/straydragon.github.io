@@ -1,12 +1,15 @@
 ---
 title: "优秀的技术博客应该是怎样的?"
 tags:
-- "blog"
+- "其他"
 categories:
 - "个人积累"
 comments: true
 date: 2019-12-09T13:34:37+08:00
 draft: false
+enableLastMod: true
+enableWordCount: true
+enableReadingTime: true
 ---
 
 当初将这个静态博客部署到 Github Page 的时候就在思考这几个问题: 我为何需要一个博客? 需要用多大的动力和精力去维护它? 如何写一篇不错的文章并坚持写作的习惯呢? 截止到写这篇文章之时, 我发现大多数之前所想的都没能做到做好, 真是个不知不扣的拖延症患者...

@@ -8,7 +8,9 @@ categories:
 - "开发日记"
 comments: true
 draft: true
-
+enableLastMod: true
+enableWordCount: true
+enableReadingTime: true
 ---
 
 > 开新坑咯...

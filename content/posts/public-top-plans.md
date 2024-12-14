@@ -8,6 +8,9 @@ categories:
 comments: true
 date: 2020-01-07T20:25:34+08:00
 draft: true
+enableLastMod: true
+enableWordCount: true
+enableReadingTime: true
 ---
 
 > 这里将放一些公开的博客增强计划, 以提示拖延症晚期的我...
