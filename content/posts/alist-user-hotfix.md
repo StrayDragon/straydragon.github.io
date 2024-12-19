@@ -22,7 +22,8 @@ draft: false
 
 ![](8ECAFD58663042ADB5FECF5A411B3751_MD5.webp)
 
-1. 将 `~/.config/mimeapps.list` 中 `[Default Applications]` 条目下 `x-scheme-handler/vlc=vlc-url-handler.desktop` 修改为这个值
+1. 将 `~/.config/mimeapps.list` 中 `[Default Applications]` 条目中 vlc 相关的配置,增加或修改为 `x-scheme-handler/vlc=vlc-url-handler.desktop`
+
 2. 创建或修改 `~/.local/share/applications/vlc-url-handler.desktop` 为
 
 ```
@@ -46,7 +47,19 @@ Categories=Application
 
 process_string() {
     local input="$1"
-    echo "${input#vlc://}"
+
+    # 判断 $1 是否以 'vlc:' 开头，如果是则去掉
+    if [[ "$input" == vlc:* ]]; then
+        input="${input#vlc://}"
+    fi
+
+    # 判断剩下的字符串是否以 'http//' 开头，如果是则替换为 'http://'
+    if [[ "$input" == http//* ]]; then
+        input="${input/http\/\//http://}"
+    fi
+
+    # 返回处理后的字符串
+    echo "$input"
 }
 
 processed=$(process_string "$1")
