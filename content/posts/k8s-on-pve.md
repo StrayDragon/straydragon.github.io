@@ -228,7 +228,7 @@ sudo kubeadm join 192.168.0.200:6443 --token 9vr73a.a8uxyaju799qwdjv --discovery
 
 
 
-# 遇到的一些问题 Q&A
+## 遇到的一些问题 Q&A
 
 ### 运行 `kubeadm init` 时卡在 `[api-check]`
 ```bash
