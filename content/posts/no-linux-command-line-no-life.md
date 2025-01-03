@@ -16,7 +16,7 @@ enableReadingTime: true
 
 我的读书笔记: 摘自《Linux命令行与Shell脚本编程大全》中那些有意义的技巧和命令...
 
-<!-- more -->
+<!--more-->
 鉴于Linux发行版太多了, 这里只会记录那些看上去通用的命令和技巧,旨在在大多数环境中正常工作.
 另请注意:
 - 这些命令运行在 TTY (**T**ele**Ty**peWriter) 或 TE(Terminal Emulator)中,为方便查找将以每个标题中以`--TTY/--TE/--TE/TTY`表示适用性.
